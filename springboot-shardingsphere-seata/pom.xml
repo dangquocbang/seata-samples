@@ -183,6 +183,11 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>example-repo</id>
+            <name>Example Repository</name>
+            <url>file:///Users/bangdq/.m2/repository</url>
+        </repository>
     </repositories>
     <build>
         <plugins>

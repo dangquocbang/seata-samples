@@ -38,7 +38,7 @@ public class BusinessServiceImpl implements BusinessService {
     private OrderService orderService;
 
     @Override
-    @GlobalTransactional(timeoutMills = 300000, name = "dubbo-demo-tx")
+    @GlobalTransactional(timeoutMills = 300000, name = "my_test_tx_group")
     public void purchase(String userId, String commodityCode, int orderCount) {
         LOGGER.info("purchase begin ... xid: " + RootContext.getXID());
         storageService.deduct(commodityCode, orderCount);

@@ -24,7 +24,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <name>seata-samples ${project.version}</name>
     <properties>
-        <seata.version>0.8.1-SNAPSHOT</seata.version>
+        <seata.version>0.9.0-SNAPSHOT</seata.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -62,20 +62,20 @@
     </properties>
     <modules>
         <module>dubbo</module>
-        <module>springboot</module>
-        <module>nacos</module>
+<!--        <module>springboot</module>-->
+<!--        <module>nacos</module>-->
         <module>springboot-dubbo-seata</module>
         <module>tcc</module>
-        <module>springcloud-jpa-seata</module>
-        <module>nutzboot-dubbo-fescar</module>
-        <module>ha</module>
-        <module>springcloud-eureka-seata</module>
+<!--        <module>springcloud-jpa-seata</module>-->
+<!--        <module>nutzboot-dubbo-fescar</module>-->
+<!--        <module>ha</module>-->
+<!--        <module>springcloud-eureka-seata</module>-->
         <module>multiple-datasource</module>
-        <module>springboot-mybatis</module>
-        <module>springcloud-nacos-seata</module>
+<!--        <module>springboot-mybatis</module>-->
+<!--        <module>springcloud-nacos-seata</module>-->
         <module>api</module>
-        <module>springboot-shardingsphere-seata</module>
-        <module>multiple-datasource-mybatis-plus</module>
+<!--        <module>springboot-shardingsphere-seata</module>-->
+<!--        <module>multiple-datasource-mybatis-plus</module>-->
         <module>saga</module>
     </modules>
 
@@ -108,6 +108,7 @@
                 <groupId>io.seata</groupId>
                 <artifactId>seata-all</artifactId>
                 <version>${seata.version}</version>
+
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
@@ -261,6 +262,11 @@
 
     <repositories>
         <repository>
+            <id>example-repo</id>
+            <name>Example Repository</name>
+            <url>file:///Users/bangdq/.m2/repository/</url>
+        </repository>
+        <repository>
             <id>mvnrepository</id>
             <name>mvnrepository</name>
             <url>http://www.mvnrepository.com/</url>
@@ -284,6 +290,7 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+
     </repositories>
 
     <build>
@@ -292,7 +299,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>2.2.0.M3</version>
+                    <version>2.1.9.RELEASE</version>
                 </plugin>
             </plugins>
         </pluginManagement>

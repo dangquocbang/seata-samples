@@ -30,7 +30,7 @@
     <name>sofarpc-tcc-sample ${project.version}</name>
 
     <properties>
-        <seata.version>0.8.1-SNAPSHOT</seata.version>
+        <seata.version>0.9.0-SNAPSHOT</seata.version>
         <curator.version>4.2.0</curator.version>
         <netty4.version>4.1.24.Final</netty4.version>
     </properties>
@@ -55,36 +55,7 @@
             <version>${seata.version}</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>io.seata</groupId>-->
-<!--            <artifactId>seata-core</artifactId>-->
-<!--            <version>${seata.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.seata</groupId>-->
-<!--            <artifactId>seata-rm</artifactId>-->
-<!--            <version>${seata.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.seata</groupId>-->
-<!--            <artifactId>seata-rm-datasource</artifactId>-->
-<!--            <version>${seata.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.seata</groupId>-->
-<!--            <artifactId>seata-tm</artifactId>-->
-<!--            <version>${seata.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.seata</groupId>-->
-<!--            <artifactId>seata-spring</artifactId>-->
-<!--            <version>${seata.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.seata</groupId>-->
-<!--            <artifactId>seata-dubbo</artifactId>-->
-<!--            <version>${seata.version}</version>-->
-<!--        </dependency>-->
+
 
         <dependency>
             <groupId>io.seata</groupId>
@@ -144,6 +115,11 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
+        </repository>
+        <repository>
+            <id>example-repo</id>
+            <name>Example Repository</name>
+            <url>file:///Users/bangdq/.m2/repository</url>
         </repository>
     </repositories>
 
