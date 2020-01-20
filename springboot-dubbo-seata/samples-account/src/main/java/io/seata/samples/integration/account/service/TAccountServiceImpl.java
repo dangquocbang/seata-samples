@@ -25,11 +25,11 @@ public class TAccountServiceImpl extends ServiceImpl<TAccountMapper, TAccount> i
     public ObjectResponse decreaseAccount(AccountDTO accountDTO) {
         int account = baseMapper.decreaseAccount(accountDTO.getUserId(), accountDTO.getAmount().doubleValue());
         ObjectResponse<Object> response = new ObjectResponse<>();
-        if (account > 0){
-            response.setStatus(RspStatusEnum.SUCCESS.getCode());
-            response.setMessage(RspStatusEnum.SUCCESS.getMessage());
-            return response;
-        }
+//        if (account > 0){
+//            response.setStatus(RspStatusEnum.SUCCESS.getCode());
+//            response.setMessage(RspStatusEnum.SUCCESS.getMessage());
+//            return response;
+//        }
 
         response.setStatus(RspStatusEnum.FAIL.getCode());
         response.setMessage(RspStatusEnum.FAIL.getMessage());
