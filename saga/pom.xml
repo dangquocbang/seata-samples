@@ -31,6 +31,9 @@
         <module>local-saga-sample</module>
         <module>sofarpc-saga-sample</module>
         <module>dubbo-saga-sample</module>
+        <module>zalopay-zas-service</module>
+        <module>zalopay-promotion-service</module>
+
     </modules>
 
     <dependencyManagement>

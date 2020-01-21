@@ -53,7 +53,7 @@
         <cglib.version>3.1</cglib.version>
         <aopalliance.version>1.0</aopalliance.version>
         <zkclient.version>0.10</zkclient.version>
-        <dubbo.registry.nacos>2.6.5</dubbo.registry.nacos>
+        <dubbo.registry.nacos>2.6.6</dubbo.registry.nacos>
         <spring-context-support.version>1.0.2</spring-context-support.version>
         <testng.version>6.4</testng.version>
         <protobuf.version>3.7.1</protobuf.version>
@@ -67,21 +67,22 @@
     <modules>
         <module>dubbo</module>
 <!--        <module>springboot</module>-->
-<!--        <module>nacos</module>-->
+        <module>nacos</module>
         <module>springboot-dubbo-seata</module>
-        <module>tcc</module>
+<!--        <module>tcc</module>-->
 <!--        <module>springcloud-jpa-seata</module>-->
 <!--        <module>nutzboot-dubbo-fescar</module>-->
 <!--        <module>ha</module>-->
 <!--        <module>springcloud-eureka-seata</module>-->
-        <module>multiple-datasource</module>
+<!--        <module>multiple-datasource</module>-->
 <!--        <module>springboot-mybatis</module>-->
 <!--        <module>springcloud-nacos-seata</module>-->
-        <module>api</module>
+<!--        <module>api</module>-->
 <!--        <module>springboot-shardingsphere-seata</module>-->
 <!--        <module>multiple-datasource-mybatis-plus</module>-->
         <module>saga</module>
-        <module>spring-cloud-alibaba-samples</module>
+<!--        <module>spring-cloud-alibaba-samples</module>-->
+
     </modules>
 
     <dependencies>
@@ -338,6 +339,7 @@
                         <ruleset>rulesets/java/ali-other.xml</ruleset>
                         <ruleset>rulesets/java/ali-set.xml</ruleset>
                     </rulesets>
+                    <skip>true</skip>
                 </configuration>
                 <executions>
                     <execution>
